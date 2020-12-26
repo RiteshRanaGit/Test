@@ -47,7 +47,11 @@ app.use('/api/testScore', testScore);
 // app.use('/api/classnotice', classnotice);
 // app.use('/api/subjectnotice', subjectnotice);
 
+// @route   GET 
+// @decs    Test user route
+// @access  Public
 
+app.get('/', (req, res) => res.json({ msg: "test is working"}));
 
 const port = process.env.PORT  || 4000;
 
