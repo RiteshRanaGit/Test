@@ -9,7 +9,7 @@ const Candidate = require('../../models/Candidate');
 const TestScore = require('../../models/TestScore');
 const { route } = require('./testScore');
 
-//Load user model
+
 
 
 // @route   GET api/candidate/test
@@ -20,7 +20,7 @@ router.get('/test', (req, res) => res.json({ msg: "candidate is working"}));
 
 // @route   post api/candidate
 // @decs    create a class
-// @access  private
+// @access  public
 
 router.post('/', (req, res) => {
     const errors = {};

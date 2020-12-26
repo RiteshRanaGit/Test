@@ -1,7 +1,7 @@
 const express = require('express');
 const mongooes = require('mongoose');
 const bodyParser = require('body-parser');
-// const passport = require('passport');
+
 
 const candidate = require('./routes/api/candidate');
 const testScore = require('./routes/api/testScore');
@@ -40,12 +40,7 @@ mongooes
 
 app.use('/api/candidate', candidate);
 app.use('/api/testScore', testScore);
-// app.use('/api/profile', profile);
-// app.use('/api/classrooms', classrooms);
-// app.use('/api/notes', notes);
-// app.use('/api/subject', subject);
-// app.use('/api/classnotice', classnotice);
-// app.use('/api/subjectnotice', subjectnotice);
+
 
 // @route   GET 
 // @decs    Test user route

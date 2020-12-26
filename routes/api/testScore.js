@@ -198,16 +198,15 @@ router.get('/allCandidate/avg', async (req, res)=>{
                                 }
                                 const value = testscore.avg.get_marks;
                             
-                                // candidate_info.avg_marks= value;
+                                
                                 return value;
-                                //return  value;
-                                //return value;
+                               
                             })   
                         ), 1000)
                         
                     });
                                       
-                     // want to return this
+                    
                         
                           candidate_info.avg_marks = await promise;
                       
