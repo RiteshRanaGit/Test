@@ -10,11 +10,17 @@ const Candidate = require('../../models/Candidate');
 const TestScore = require('../../models/TestScore');
 
 //Load user model
+
+
+// @route   GET api/test
+// @decs    Test user route
+// @access  Public
+
 router.get('/test', (req, res) => res.json({ msg: "candidate is working"}));
 
-// @route   post api/candidate
+// @route   post api/testscore
 // @decs    create a class
-// @access  private
+// @access  Public
 
 router.post('/', (req, res) => {
     const errors = {};
@@ -151,7 +157,7 @@ router.get('/highscore', (req, res)=>{
 });
 
 
-// @route   GET api/testscore/highscore
+// @route   GET api/testscore/allCandidate/avg
 // @decs    Test user route
 // @access  Public
 
@@ -254,14 +260,6 @@ router.get('/allCandidate/avg', async (req, res)=>{
     
     })
 });
-
-
-
-// @route   GET api/testscore/test
-// @decs    Test user route
-// @access  Public
-
-router.get('/test', (req, res) => res.json({ msg: " testscore is working"}));
 
 
 module.exports = router;
